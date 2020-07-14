@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function BasicTextFields() {
+export default function BasicTextFields(props) {
   const classes = useStyles();
   return (
     <form className={classes.root} noValidate autoComplete="off">
@@ -23,7 +23,8 @@ export default function BasicTextFields() {
         id="outlined-basic" 
         placeholder={'Type your message....'}
         variant="outlined" 
-        value={''}
+        onChange={e => props.getInput(e.target.value)}
+        value={props.inputText}
       />
     </form>
   );
