@@ -1,11 +1,13 @@
 import React from 'react';
+import Input from '../../shared/Input';
 import styles from './index.module.css';
 
-const Input = () => {
+const TextInput = () => {
     return (
         <div className={styles.inputContainer}>
+            <Input />
         </div>
     );
 };
 
-export default Input;
+export default TextInput;
