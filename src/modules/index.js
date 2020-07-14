@@ -8,7 +8,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputText: ''
+      inputText: '',
+      messages: [
+        {
+          fromUser: true,
+          payload: 'Hi, How are you?'
+        },
+        {
+          fromUser: false,
+          payload: 'I am Fine. How are you?'
+        }
+      ]
     }
   }
 
@@ -22,7 +32,9 @@ class App extends Component {
     return (
       <div className={styles.App}>
         <Header />
-        <ChatWindow />
+        <ChatWindow 
+          messages={this.state.messages}
+        />
         <TextInput 
           inputText={this.state.inputText}
           getInput={this.getInput}
