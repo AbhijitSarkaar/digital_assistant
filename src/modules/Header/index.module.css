@@ -1,3 +1,19 @@
-.chatContainer {
-    border: 1px solid;
+.headerContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.menuIcon {
+    margin-left: 10px;
+    width: 50px !important;
+    height: 55px !important;
+}
+.headerTextContainer {
+    display: flex;
+    align-items: center;
+}
+.headerText {
+    margin: 0px;
+    color: grey;
+    font-family: Verdana;
+    font-size: 20px;
 }
