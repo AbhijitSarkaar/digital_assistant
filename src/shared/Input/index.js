@@ -24,6 +24,12 @@ export default function BasicTextFields(props) {
         placeholder={'Type your message....'}
         variant="outlined" 
         onChange={e => props.getInput(e.target.value)}
+        onKeyPress={e => {
+          if(e.key === "Enter") {
+            props.onTextEnter();
+            e.preventDefault();
+          }
+        }}
         value={props.inputText}
       />
     </form>

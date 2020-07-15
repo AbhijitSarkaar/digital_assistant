@@ -17,8 +17,39 @@ class App extends Component {
         {
           fromUser: false,
           payload: 'I am Fine. How are you?'
+        },{
+          fromUser: true,
+          payload: 'Hi, How are you?'
+        },
+        {
+          fromUser: false,
+          payload: 'I am Fine. How are you?'
+        },{
+          fromUser: true,
+          payload: 'Hi, How are you?'
+        },
+        {
+          fromUser: false,
+          payload: 'I am Fine. How are you?'
+        },{
+          fromUser: true,
+          payload: 'Hi, How are you?'
         }
       ]
+    }
+  }
+
+  onTextEnter = () => {
+    if(this.state.inputText.length) {
+      let messages = [...this.state.messages];
+      messages.push({
+        fromUser: true,
+        payload: this.state.inputText
+      });
+      this.setState({
+        messages,
+        inputText: ''
+      });
     }
   }
 
@@ -38,6 +69,7 @@ class App extends Component {
         <TextInput 
           inputText={this.state.inputText}
           getInput={this.getInput}
+          onTextEnter={this.onTextEnter}
         />
       </div>
     );

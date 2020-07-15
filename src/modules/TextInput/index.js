@@ -8,6 +8,7 @@ const TextInput = (props) => {
             <Input 
                 getInput={props.getInput}
                 inputText={props.inputText}
+                onTextEnter={props.onTextEnter}
             />
         </div>
     );

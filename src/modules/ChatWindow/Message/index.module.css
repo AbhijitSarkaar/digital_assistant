@@ -1,18 +1,25 @@
 .messageContainer {
-    height: 50px;
+    margin: 5px;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 .userMessage {
+    padding-right: 10px;
     justify-content: flex-end;
 }
 .messageBody {
-    margin: 5px;
-    padding: 10px;
+    height: auto;
     background: rgb(238, 243, 242);
     border: 1px solid lightgray;
     border-radius: 5px;
+    word-break: break-word;
+    width: 95%;
+}
+.userMessageColor {
+    background: rgb(159, 159, 221);
+    color: white;
 }
 .messageBodyText {
-    margin: 0;
+    margin: 10px;
 }
