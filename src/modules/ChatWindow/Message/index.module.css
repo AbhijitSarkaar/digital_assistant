@@ -14,7 +14,7 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     word-break: break-word;
-    width: 95%;
+    max-width: 95%;
 }
 .userMessageColor {
     background: rgb(159, 159, 221);
