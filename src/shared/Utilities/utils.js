@@ -51,6 +51,7 @@ export const response = (text) => {
         case "cool": return "Cool"
         case "sorry": return "It's Ok"
         case "by": return "Bye Bye!"
+        case "you don't know anything": return "Sorry! From now on I'll try my best";
 
         //Questions from User
         case "what is your name": return "I am Digital Assistant"
