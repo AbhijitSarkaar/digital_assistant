@@ -1,11 +1,14 @@
 .headerContainer {
     display: grid;
+    height: 50px;
+    align-items: center;
     grid-template-columns: 30% 70%;
 }
-.menuIcon {
+.assistantIcon {
     margin-left: 10px;
-    width: 50px !important;
-    height: 55px !important;
+    width: 30px !important;
+    height: 35px !important;
+    color: rgb(159, 159, 221);
 }
 .headerTextContainer {
     display: flex;

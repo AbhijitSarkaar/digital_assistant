@@ -1,11 +1,11 @@
 import React from 'react';
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+import AssistantOutlinedIcon from '@material-ui/icons/AssistantOutlined';
 import styles from './index.module.css';
 
 const Header = () => {
     return (
         <div className={styles.headerContainer}>
-            <MenuRoundedIcon classes={{'root': styles.menuIcon}} />
+            <AssistantOutlinedIcon classes={{'root': styles.assistantIcon}} />
             <div className={styles.headerTextContainer}>
                 <p className={styles.headerText}>
                     Digital Assistant
