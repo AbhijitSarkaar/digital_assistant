@@ -8,7 +8,7 @@
     margin-left: 10px;
     width: 30px !important;
     height: 35px !important;
-    color: rgb(159, 159, 221);
+    color: rgb(85, 85, 216);
 }
 .headerTextContainer {
     display: flex;
@@ -16,7 +16,7 @@
 }
 .headerText {
     margin: 0px;
-    color: rgb(159, 159, 221);
+    color: rgb(85, 85, 216);
     font-family: Verdana;
     font-size: 20px;
 }
