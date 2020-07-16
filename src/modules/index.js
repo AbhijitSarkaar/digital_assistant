@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import ChatWindow from './ChatWindow';
 import TextInput from './TextInput';
+import {response} from './../shared/Utilities/utils';
 import styles from './index.module.css';
 
 class App extends Component {
@@ -10,31 +11,6 @@ class App extends Component {
     this.state = {
       inputText: '',
       messages: [
-        {
-          fromUser: true,
-          payload: 'Hi, How are you?'
-        },
-        {
-          fromUser: false,
-          payload: 'I am Fine. How are you?'
-        },{
-          fromUser: true,
-          payload: 'Hi, How are you?'
-        },
-        {
-          fromUser: false,
-          payload: 'I am Fine. How are you?'
-        },{
-          fromUser: true,
-          payload: 'Hi, How are you?'
-        },
-        {
-          fromUser: false,
-          payload: 'I am Fine. How are you?'
-        },{
-          fromUser: true,
-          payload: 'Hi, How are you?'
-        }
       ]
     }
   }
@@ -45,6 +21,10 @@ class App extends Component {
       messages.push({
         fromUser: true,
         payload: this.state.inputText
+      });
+      messages.push({
+        fromUser: false,
+        payload: response(this.state.inputText)
       });
       this.setState({
         messages,
